@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>¿De qué casa es? · Game of Thrones</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <header>
+      <h1>¿De qué casa es?</h1>
+      <p class="sub">Adivina a qué casa de Game of Thrones pertenece cada personaje</p>
+      <div class="stats">
+        <span>Pregunta <b id="round">0</b>/<b id="total">10</b></span>
+        <span>Puntos: <b id="score">0</b></span>
+        <span>Racha: <b id="streak">0</b></span>
+      </div>
+    </header>
+
+    <section id="game">
+      <div class="character">
+        <img id="photo" alt="" hidden />
+        <h2 id="name">Cargando personajes…</h2>
+        <p id="title" class="title"></p>
+      </div>
+      <div id="options" class="options"></div>
+      <p id="feedback" class="feedback"></p>
+      <button id="next" class="btn" hidden>Siguiente ▶</button>
+    </section>
+
+    <section id="end" hidden>
+      <h2 id="end-title"></h2>
+      <p id="end-text"></p>
+      <button id="restart" class="btn">Jugar de nuevo</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
